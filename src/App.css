@@ -1,117 +1,3 @@
-/* ===== Navigation ===== */
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 30px;
-  z-index: 100;
-  transition: background-color 0.3s ease;
-}
-
-.nav.scrolled {
-  background-color: rgba(190, 74, 50, 0.95);
-  backdrop-filter: blur(8px);
-}
-
-.nav-logo {
-  font-family: "Playfair Display", serif;
-  font-size: 22px;
-  color: #f0e8d8;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
-.nav-links {
-  display: flex;
-  gap: 22px;
-}
-
-.nav-links a {
-  font-family: "Playfair Display", serif;
-  font-size: 13px;
-  color: #f0e8d8;
-  font-style: italic;
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-
-.nav-links a:hover {
-  opacity: 0.8;
-}
-
-/* Mobile hamburger */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 4px;
-  cursor: pointer;
-  padding: 8px;
-  background: none;
-  border: none;
-}
-
-.hamburger span {
-  width: 20px;
-  height: 2px;
-  background: #f0e8d8;
-  transition: all 0.3s ease;
-}
-
-.hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(4px, 4px);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(4px, -4px);
-}
-
-/* Mobile menu */
-.mobile-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #be4a32;
-  z-index: 99;
-  padding: 80px 26px;
-  flex-direction: column;
-  gap: 26px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.mobile-menu.open {
-  opacity: 1;
-  visibility: visible;
-}
-
-.mobile-menu a {
-  font-family: "Playfair Display", serif;
-  font-size: 30px;
-  font-style: italic;
-  color: rgba(248, 241, 228, 0.6);
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.mobile-menu a:first-child,
-.mobile-menu a:hover {
-  color: #f8f1e4;
-}
-
 /* ===== Hero Section ===== */
 .hero {
   position: relative;
@@ -581,18 +467,6 @@
 
 /* ===== Responsive Styles ===== */
 @media (max-width: 900px) {
-  .nav-links {
-    display: none;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .mobile-menu {
-    display: flex;
-  }
-
   .hero-wordmark {
     left: 20px;
     text-align: center;
@@ -706,14 +580,6 @@
 }
 
 @media (max-width: 480px) {
-  .nav {
-    padding: 16px 16px;
-  }
-
-  .nav-logo {
-    font-size: 18px;
-  }
-
   .hero-wordmark {
     font-size: 64px;
     bottom: 5vh;

@@ -1,82 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
+import Header from './components/Header';
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setMenuOpen(false);
-    }
-  };
-
-  const navLinks = [
-    { id: 'story', label: 'Story' },
-    { id: 'policy', label: 'Policy' },
-    { id: 'about', label: 'About' },
-    { id: 'media', label: 'Media' },
-    { id: 'contact', label: 'Contact' },
-  ];
-
   return (
     <div className="App">
-      {/* Navigation */}
-      <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
-        <a href="#hero" className="nav-logo" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>
-          O&deg;
-        </a>
-        <div className="nav-links">
-          {navLinks.map((link) => (
-            <a
-              key={link.id}
-              href={`#${link.id}`}
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection(link.id);
-              }}
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
-        <button
-          className={`hamburger ${menuOpen ? 'open' : ''}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </nav>
-
-      {/* Mobile Menu */}
-      <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
-        {navLinks.map((link) => (
-          <a
-            key={link.id}
-            href={`#${link.id}`}
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection(link.id);
-            }}
-          >
-            {link.label}
-          </a>
-        ))}
-      </div>
+      <Header />
 
       {/* Hero Section */}
       <section id="hero" className="hero">
