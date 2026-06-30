@@ -39,7 +39,7 @@
 - [x] Header.css ファイル作成
 - [x] App.tsx から Header を import
 - [x] App.css から古いナビゲーションスタイルを削除
-- [~] GitHub Pages にデプロイ
+- [x] GitHub Pages にデプロイ
 - [ ] 修正が完了しているかチェック（ユーザー確認待ち）
 
 ### [P003] 見出しスライドインアニメーション
@@ -64,5 +64,5 @@
 
 ---
 
-## 最終更新: 2026-07-01 02:20
+## 最終更新: 2026-07-01 02:35
 ## 本番URL: https://jime0083.github.io/olion-site
