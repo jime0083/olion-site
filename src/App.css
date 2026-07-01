@@ -38,9 +38,10 @@
 .story h2 {
   font-family: "Playfair Display", serif;
   margin: 0 0 34px;
-  font-size: clamp(48px, 8vw, 88px);
+  font-size: clamp(80px, 18vw, 240px);
   line-height: 1;
   font-weight: 700;
+  font-style: italic;
 }
 
 .story h3 {
@@ -76,9 +77,10 @@
 .policy h2 {
   font-family: "Playfair Display", serif;
   margin: 0 0 44px 278px;
-  font-size: clamp(36px, 6vw, 64px);
+  font-size: clamp(80px, 18vw, 240px);
   line-height: 1;
   font-weight: 700;
+  font-style: italic;
   color: #be4a32;
 }
 
@@ -144,9 +146,10 @@
   font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0 0 0 50px;
-  font-size: clamp(48px, 8vw, 88px);
+  font-size: clamp(80px, 18vw, 240px);
   line-height: 1;
   font-weight: 700;
+  font-style: italic;
   color: #be4a32;
   position: relative;
   z-index: 4;
@@ -333,9 +336,10 @@
 .media h2 {
   font-family: "Playfair Display", serif;
   margin: 0 0 44px;
-  font-size: clamp(48px, 8vw, 88px);
+  font-size: clamp(80px, 18vw, 240px);
   line-height: 1;
   font-weight: 700;
+  font-style: italic;
   color: #be4a32;
 }
 
@@ -429,9 +433,10 @@
 .contact h2 {
   font-family: "Playfair Display", serif;
   margin: 0 0 28px;
-  font-size: clamp(52px, 8vw, 96px);
+  font-size: clamp(80px, 18vw, 240px);
   line-height: 1;
   font-weight: 700;
+  font-style: italic;
   color: #f0e8d8;
 }
 
@@ -593,7 +598,7 @@
   .about h2,
   .media h2,
   .contact h2 {
-    font-size: 44px;
+    font-size: 64px;
   }
 
   .about h2 {
